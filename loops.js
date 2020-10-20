@@ -23,22 +23,22 @@ function whileLoop(n) {
      return Math.random() >= 0.5
    }
 
-   function doWhileLoop(num) {
 
-   var i = 0;
-   function incrementVariable() {
-     ++1
-     return i;
+
+
+   function doWhileLoop(num)  {
+   if(num>9) {
+      num = 9;
    }
 
-   do {
-     if (i < num) {
-       console.log(i, "I run once regardless.");
-     }
-   }
-   while (incrementVariable() < num);
+   var i = 0; 
 
-   console.log("Final value of i:", i);
+  function incrementVariable() {
+    i++
+    return i;
+  }
+  do {
+    console.log("I run once regardless.");
+   }
+  while(incrementVariable() <= num);
  }
-
- doWhileLoop(10);
