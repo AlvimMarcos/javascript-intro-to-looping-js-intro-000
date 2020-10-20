@@ -31,7 +31,7 @@ function whileLoop(n) {
       num = 9;
    }
 
-   var i = 0; 
+   var i = 0;
 
   function incrementVariable() {
     i++
