@@ -27,7 +27,7 @@ function whileLoop(n) {
 
    var i = 0;
    function incrementVariable() {
-     i--
+     ++1
      return i;
    }
 
