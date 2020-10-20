@@ -23,8 +23,22 @@ function whileLoop(n) {
      return Math.random() >= 0.5
    }
 
-  do {
-        array.pop();
-      } while (array.length > -1 && maybeTrue());
-        return array;
-    }
+   function doWhileLoop(num) {
+ 
+   var i = 0;
+   function incrementVariable() {
+     i++
+     return i;
+   }
+   
+   do {
+     if (i < num) {
+       console.log(i, "I run once regardless.");
+     }
+   }
+   while (incrementVariable() < num);
+ 
+   console.log("Final value of i:", i);
+ }
+ 
+ doWhileLoop(10);
